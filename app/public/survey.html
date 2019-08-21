@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder - Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row-fluid">
+
+            <div class="col-lg-12" style="text-align: center;">
+                <h1>Let's Find You A Friend!</h1>
+                <hr>
+                <div>
+
+                    <div>
+                        <form role="form">
+                            <h3>But first, tell us about yourself.</h3>
+
+                            <div class="form-group">
+                                <h4 for="name">What is your name?</h4>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <h4 for="role">Show off those good looks. Paste a link to a photo of you below.</h4>
+                                <input type="text" id="image" class="form-control" required>
+                            </div>
+                            <div class="scale">
+                                <h6>Select the number that best answers the question; 1 = "Strongly Agree" and 5 = "Strongly Disagree."</h6>
+                                
+                            </div>
+
+                            <h6>Question 1:</h6>
+                            <p>How organized is your bedroom right now?</p>
+                            <select name="question1" class="formQuestions" id="question-1">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 2:</h6>
+                            <p>How important is winning to you?</p>
+                            <select name="question2" class="formQuestions" id="question-2">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 3:</h6>
+                            <p>How likely are you to sleep past noon on weekends?</p>
+                            <select name="question3" class="formQuestions" id="question-3">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 4:</h6>
+                            <p>How important is it that you exercise regularly?</p>
+                            <select name="question4" class="formQuestions" id="question-4">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 5:</h6>
+                            <p>How stressed have you been this past week?</p>
+                            <select name="question5" class="formQuestions" id="question-5">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 6:</h6>
+                            <p>How creative do you consider yourself to be?</p>
+                            <select name="question6" class="formQuestions" id="question-6">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 7:</h6>
+                            <p>How important is it that you accomplish something productive everyday?</p>
+                            <select name="question7" class="formQuestions" id="question-7">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 8:</h6>
+                            <p>How much do you like cats? (The animal, not the play...)</p>
+                            <select name="question8" class="formQuestions" id="question-8">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 9:</h6>
+                            <p>How comfortable are you with putting things off until the very last second?</p>
+                            <select name="question9" class="formQuestions" id="question-9">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h6>Question 10:</h6>
+                            <p>How likely are you to treat failure as a learning experience?</p>
+                            <select name="question10" class="formQuestions" id="question-10">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+
+                        </form>
+                        <br>
+                        <div class="text-center">
+                            <button type="submit" data-target="modal" class="btn btn-danger btn-md"
+                                id="submit-btn">
+                                <span>Submit</span>
+                            </button>
+                            <button type="submit" class="btn btn-danger btn-md" >
+                                <a href="/" style="color: white;">Home</a>
+                            </button>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content"style="
+            background: #fff;
+            text-align: center;
+            margin: 10% auto;
+            width: 350px;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);"
+            >
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+                <h4>Meet your new friend</h4>
+                <h5 id="yourMatchName"></h5>
+                <img id="yourMatchImage" src="" alt="missing image" width="300px">
+                
+            </div>
+            
+        </div>
+
+    </div>
+    <footer class="footer" style="background-color: gray; height: 65px; color: white; text-align: center;">
+        <div class="container">
+            <a href="/api/friends" style="color: white; margin-right: 20px;">Friend Finder API</a>
+            <a href="https://github.com/clarkalms/friend-finder"style="color: white; margin-right: 20px;">Clark Alms GitHub Repo</a>
+            <span>Friend Finder 2019</span>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript">
+      
+        $(document).ready(function () {
+            $("#submit-btn").on("click", function (event) {
+                event.preventDefault();
+                var valid = true;
+                if ($("#name").val() === "" || $("#image").val() === "" || ($("#question-1").val() == null || $("#question-2").val() === null || $("#question-3").val() === null || $("#question-4").val() === null || $("#question-5").val() === null || $("#question-6").val() === null || $("#question-7").val() === null || $("#question-8").val() === null || $("#question-9").val() === null || $("#question-10").val() === null)) {
+                    valid = false;
+                }
+                if (valid === true) {
+                    var newFriend = {
+                        name: $('#name').val().trim(),
+                        image: $('#image').val().trim(),
+                        scores: [
+                            $('#question-1').val(),
+                            $('#question-2').val(),
+                            $('#question-3').val(),
+                            $('#question-4').val(),
+                            $('#question-5').val(),
+                            $('#question-6').val(),
+                            $('#question-7').val(),
+                            $('#question-8').val(),
+                            $('#question-9').val(),
+                            $('#question-10').val(),
+                        ]
+                    };
+                    var thisWindow = window.location.origin;
+                    $.post(thisWindow + "/api/friends", newFriend, function (data) {
+                        console.log(data);
+                        $('#yourMatchName').text(data.name);
+                        $('#yourMatchImage').attr("src", data.image);
+                    });
+                    $('.modal').modal();
+                    $('#name').val();
+                    $('#image').val();
+                    $('#question-1').val();
+                    $('#question-2').val();
+                    $('#question-3').val();
+                    $('#question-4').val();
+                    $('#question-5').val();
+                    $('#question-6').val();
+                    $('#question-7').val();
+                    $('#question-8').val();
+                    $('#question-9').val();
+                    $('#question-10').val();
+                } else {
+                    alert("Please answer all the questions before continuing")
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
